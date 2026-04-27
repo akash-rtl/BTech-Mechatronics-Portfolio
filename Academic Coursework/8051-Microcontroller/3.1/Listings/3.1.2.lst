@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  3_1_2                                                                03/01/2024 09:23:53 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\3.1.2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 3.1.2.asm SET(SMALL) DEBUG PRINT(.\Listings\3.1.2.lst) OBJECT(.\Objects
+                      \3.1.2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7455              2             MOV A, #55H
+0002 B43002            3             CJNE A, #30H, LOOP
+0005 8006              4             SJMP EXIT
+0007 5003              5             LOOP: JNC LOOP1
+0009 F9                6             MOV R1, A
+000A 8001              7             SJMP EXIT
+000C FA                8             LOOP1: MOV R2, A
+000D 00                9             EXIT: NOP
+                      10     END
+                                     
+A51 MACRO ASSEMBLER  3_1_2                                                                03/01/2024 09:23:53 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+EXIT . . . . . . .  C ADDR   000DH   A   
+LOOP . . . . . . .  C ADDR   0007H   A   
+LOOP1. . . . . . .  C ADDR   000CH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  3_1_4                                                                03/01/2024 06:53:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\3.1.4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 3.1.4.asm SET(SMALL) DEBUG PRINT(.\Listings\3.1.4.lst) OBJECT(.\Objects
+                      \3.1.4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 752041            2             MOV 20H, #41H
+0003 753051            3             MOV 30H, #51H
+0006 7820              4             MOV R0, #20H
+0008 7930              5             MOV R1, #30H
+000A 902000            6             MOV DPTR, #2000H
+000D 7A05              7             MOV R2, #05H
+000F E6                8             LOOP: MOV A, @R0
+0010 27                9             ADD A, @R1
+0011 F0               10             MOVX @DPTR, A
+0012 08               11             INC R0
+0013 09               12             INC R1
+0014 A3               13             INC DPTR
+0015 DAF8             14             DJNZ R2, LOOP
+                      15     END
+A51 MACRO ASSEMBLER  3_1_4                                                                03/01/2024 06:53:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   000FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

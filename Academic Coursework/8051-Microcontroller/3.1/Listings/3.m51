@@ -1,0 +1,96 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    03/01/2024  09:23:55  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\3.1.2.obj, .\Objects\3.1.3.obj, .\Objects\3.1.4.obj TO .\Objects\3.1 PRINT (.\List
+>> ings\3.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\3.1.2.obj (3_1_2)
+  .\Objects\3.1.3.obj (3_1_3)
+  .\Objects\3.1.4.obj (3_1_4)
+
+
+LINK MAP OF MODULE:  .\Objects\3.1 (3_1_2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000EH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000EH     ABSOLUTE     
+* OVERLAP * CODE    0000H     0017H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\3.1 (3_1_2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        3_1_2
+  C:000DH         SYMBOL        EXIT
+  C:0007H         SYMBOL        LOOP
+  C:000CH         SYMBOL        LOOP1
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0005H         LINE#         4
+  C:0007H         LINE#         5
+  C:0009H         LINE#         6
+  C:000AH         LINE#         7
+  C:000CH         LINE#         8
+  C:000DH         LINE#         9
+  -------         ENDMOD        3_1_2
+
+  -------         MODULE        3_1_3
+  C:0007H         SYMBOL        LOOP
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0007H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  C:000AH         LINE#         8
+  C:000BH         LINE#         9
+  C:000CH         LINE#         10
+  -------         ENDMOD        3_1_3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  03/01/2024  09:23:55  PAGE 2
+
+
+
+  -------         MODULE        3_1_4
+  C:000FH         SYMBOL        LOOP
+  C:0000H         LINE#         2
+  C:0003H         LINE#         3
+  C:0006H         LINE#         4
+  C:0008H         LINE#         5
+  C:000AH         LINE#         6
+  C:000DH         LINE#         7
+  C:000FH         LINE#         8
+  C:0010H         LINE#         9
+  C:0011H         LINE#         10
+  C:0012H         LINE#         11
+  C:0013H         LINE#         12
+  C:0014H         LINE#         13
+  C:0015H         LINE#         14
+  -------         ENDMOD        3_1_4
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000DH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000DH
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0033H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=51
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)
