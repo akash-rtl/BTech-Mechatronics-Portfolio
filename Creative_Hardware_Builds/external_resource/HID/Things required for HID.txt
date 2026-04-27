@@ -1,0 +1,11 @@
+Bakwas
+
+
+You should include HID.h
+In void setup you need to use this line
+Serial.begin(SERIAL_HID_BAUD);
+
+
+Video tutorial used: https://www.youtube.com/watch?v=Nvfmg-M5Gc8
+
+
